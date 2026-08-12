@@ -3,8 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { scrapeProduct } from './scrape.js';
 
 const browser = await chromium.launch({
-  headless: false,
-  slowMo: 100,
+  headless: true,
 });
 
 try {
